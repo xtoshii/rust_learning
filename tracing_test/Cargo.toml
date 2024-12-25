@@ -1,0 +1,25 @@
+[package]
+name = "tracing_test"
+version = "0.1.0"
+edition = "2021"
+
+
+
+[[bin]]
+name = "span_record"
+path = "src/span_record.rs"
+
+[[bin]]
+name = "custom_layer_test"
+path = "src/custom_layer_test.rs"
+
+[dependencies]
+
+tracing.workspace = true
+chrono.workspace = true
+
+tracing-subscriber.workspace = true
+tracing-appender.workspace = true
+
+tokio.workspace = true
+log = "0.4.22"
