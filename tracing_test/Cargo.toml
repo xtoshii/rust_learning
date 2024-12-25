@@ -22,4 +22,3 @@ tracing-subscriber.workspace = true
 tracing-appender.workspace = true
 
 tokio.workspace = true
-log = "0.4.22"
