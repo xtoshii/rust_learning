@@ -11,7 +11,7 @@ impl<S> Layer<S> for CustomAttrLayer
 where
     S: Subscriber,
 {
-    fn on_new_span(&self, attrs: &Attributes<'_>, id: &Id, ctx: Context<'_, S>) {
+    fn on_new_span(&self, attrs: &Attributes<'_>, _id: &Id, _ctx: Context<'_, S>) {
         let mut visitor = TraceCtxVisitor::new();
         attrs.record(&mut visitor);
 
