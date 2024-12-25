@@ -1,0 +1,27 @@
+# rustfmt.toml
+
+# 基本配置
+edition = "2021"  # 指定 Rust 版本
+
+# 缩进和空格
+indent_style = "Block"  # 使用块缩进
+tab_spaces = 4          # 每个缩进级别使用 4 个空格
+
+# 行长度
+max_width = 100         # 每行最大字符数
+
+# 换行
+fn_call_width = 60      # 函数调用的换行宽度
+fn_args_layout = "Tall" # 函数参数的布局
+
+# 注释
+comment_width = 80      # 注释的最大宽度
+
+# 结构体和枚举
+struct_lit_single_line = true  # 单行结构体字面量
+
+# 控制流
+control_brace_style = "AlwaysSameLine"  # 控制流语句的括号风格
+
+# 其他
+use_small_heuristics = "Max"  # 使用小启发式规则
