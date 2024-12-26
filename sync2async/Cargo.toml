@@ -1,0 +1,14 @@
+[package]
+name = "sync2async"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "sync2async"
+path = "src/sync2async.rs"
+
+[dependencies]
+tokio.workspace = true
+dashmap.workspace = true
+futures.workspace = true
+ulid.workspace = true
