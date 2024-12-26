@@ -1,5 +1,5 @@
 [workspace]
-members = [
+members = [ "sync2async",
     "tracing_test"
 ]
 
@@ -12,3 +12,6 @@ tracing-subscriber = { version = "0.3.18" }
 tracing-appender = { version =  "0.2.3" }
 
 chrono = {version = "0.4.38"}
+dashmap = {version = "6.0.0"}
+futures = "0.3.31"
+ulid = "1.1.3"
